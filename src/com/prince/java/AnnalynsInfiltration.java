@@ -7,12 +7,12 @@ class AnnalynsInfiltration {
         //System.out.println(AnnalynsInfiltration.canFastAttack(knightIsAwake));
         //System.out.println();
 
-        /*boolean knightIsAwake = false;
+        boolean knightIsAwake = true;
         boolean archerIsAwake = false;
         boolean prisonerIsAwake = false;
         System.out.println(AnnalynsInfiltration.canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake));
         System.out.println();
-         */
+
 
         /*
         boolean archerIsAwake = true;
@@ -20,6 +20,7 @@ class AnnalynsInfiltration {
         System.out.println(AnnalynsInfiltration.canSignalPrisoner(archerIsAwake,prisonerIsAwake));
         */
 
+        /*
         boolean knightISAwake = true;
         boolean archerIsAwake = true;
         boolean prisonerIsAwake = false;
@@ -27,7 +28,7 @@ class AnnalynsInfiltration {
 
         System.out.println(AnnalynsInfiltration.canFreePrisoner(knightISAwake,archerIsAwake,prisonerIsAwake, petDoIsPresent));
 
-
+         */
     }
 
     public static boolean canFastAttack(boolean knightIsAwake) {
@@ -42,7 +43,7 @@ class AnnalynsInfiltration {
 
     public static boolean canSpy(boolean knightIsAwake, boolean archerIsAwake, boolean prisonerIsAwake) {
         //throw new UnsupportedOperationException("Please implement the (static) AnnalynsInfiltration.canSpy() method");
-        if (archerIsAwake || archerIsAwake || prisonerIsAwake){
+        if ( knightIsAwake || archerIsAwake || prisonerIsAwake){
             return true;
         }
         else{
